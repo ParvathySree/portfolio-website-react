@@ -3,13 +3,13 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { IconButton } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
-import {GITHUB_URL,LINKDIN_URL,EMAIL} from '../../utils/links/links'
+import { GITHUB_URL, LINKDIN_URL, EMAIL } from '../../utils/links/links'
 import './Home.css'
 
 
 const Home = () => {
 
-  
+
   return (
     <div className='home-con'>
       <div>
@@ -19,26 +19,22 @@ const Home = () => {
         <h2>Let<span className='name-clr'>'</span>s connect<span className='name-clr'>.</span></h2>
         <div className='icons'>
           <a href={LINKDIN_URL}><IconButton className='icon-btn'>
-            <LinkedInIcon className='icon-mat'/>
+            <LinkedInIcon className='icon-mat' />
           </IconButton >
           </a>
           <a href={GITHUB_URL}><IconButton className='icon-btn'>
-            <GitHubIcon className='icon-mat'/>
+            <GitHubIcon className='icon-mat' />
           </IconButton>
           </a>
           <a href={EMAIL}>
-          <IconButton className='icon-btn'>
-            <EmailIcon className='icon-mat'/>
-          </IconButton>
+            <IconButton className='icon-btn'>
+              <EmailIcon className='icon-mat' />
+            </IconButton>
           </a>
         </div>
       </div>
-
       <div>
         <img src='./src/utils/developer.svg'></img>
-        <div>
-
-        </div>
       </div>
     </div>
   )

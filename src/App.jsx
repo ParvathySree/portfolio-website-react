@@ -2,6 +2,7 @@ import Home from './components/Home/Home'
 import Header from './components/Header/Header'
 import { createBrowserRouter, Outlet } from 'react-router-dom';
 import './App.css'
+import Projects from './components/Projects/Projects';
 
 
 function App() {
@@ -29,7 +30,7 @@ export const appRouter = createBrowserRouter([
       },
       {
         path:'/projects',
-        element:<Home/>
+        element:<Projects/>
       }
     ]
   }

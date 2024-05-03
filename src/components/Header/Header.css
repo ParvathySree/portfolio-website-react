@@ -24,3 +24,12 @@
     padding: 6px;
   
   }
+
+  .active{
+    color:#6c63ff;
+    font-weight: 500;
+  }
+
+  .inactive{
+    color:#22361e;
+  }
