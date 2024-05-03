@@ -1,0 +1,75 @@
+.home-con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 100px;
+    margin-top: 100px;
+
+}
+.name-clr{
+    color:#6c63ff;
+}
+
+.heading-1{
+    font-size: 4rem !important;
+    margin:0;
+    animation: revealText 2s forwards; 
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+h3{
+    margin:0;
+    margin-top:10px;
+    margin-bottom: 70px;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.heading-1::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #333; /* Initial text color */
+    animation: revealText 2s forwards; /* Change duration as needed */
+}
+
+@keyframes revealText {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+h2{
+    font-size: 2rem;
+    font-weight: 400 !important;
+}
+
+.icons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.icon-mat{
+    color:#878787;
+}
+
+.icons button{
+    transition: transform 0.6s ease;
+}
+
+.icons button:hover{
+    transform: rotateX(0deg) rotateY(180deg);
+}
+
+.icons svg{
+    width: 35px;
+    height: 35px;
+}
