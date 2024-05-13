@@ -13,6 +13,12 @@
 
 .menu-bar{
     margin-top: 0;
+      position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f1f1f2; /* adjust background color as needed */
+  z-index: 1000;
 
 }
 

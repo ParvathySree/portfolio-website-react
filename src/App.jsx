@@ -3,6 +3,7 @@ import Header from './components/Header/Header'
 import { createBrowserRouter, Outlet } from 'react-router-dom';
 import './App.css'
 import Projects from './components/Projects/Projects';
+import About from './components/About/About';
 
 
 function App() {
@@ -26,7 +27,7 @@ export const appRouter = createBrowserRouter([
     children : [
       {
         path:'/',
-        element:<Home/>
+        element:<About/>
       },
       {
         path:'/projects',

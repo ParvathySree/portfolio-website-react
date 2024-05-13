@@ -5,6 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import { GITHUB_URL, LINKDIN_URL, EMAIL } from '../../utils/links/links'
 import './Home.css'
+import Stack from '../Stack/Stack';
 
 
 const Home = () => {

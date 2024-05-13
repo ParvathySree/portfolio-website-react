@@ -1,0 +1,29 @@
+.card-con{
+    display: flex;
+    gap:50px
+}
+
+.progress-con{
+    display: flex;
+    gap : 50px;
+    width: 40%;
+    margin:20px;
+    align-items: center;
+    /* margin-top: 20px; */
+    justify-content: center;
+}
+
+.skill-name{
+    font-family: "Caveat", cursive;
+    width:15%;
+    font-weight: 700;
+    color: #f6ff63;
+    font-size: 1.5rem;
+}
+
+.ant-progress-text{
+    color: #f6ff63 !important;
+    font-family: "Caveat", cursive !important;
+    /* font-size: 1rem; */
+    /* margin-left: 10px !important; */
+}
