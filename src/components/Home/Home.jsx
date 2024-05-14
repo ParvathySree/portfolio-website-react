@@ -35,7 +35,7 @@ const Home = () => {
         </div>
       </div>
       <div>
-        <img src='./src/utils/developer.svg'></img>
+        <img src='./src/utils/images/developer.svg' alt='developer'></img>
       </div>
     </div>
   )

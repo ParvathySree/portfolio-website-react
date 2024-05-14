@@ -3,64 +3,69 @@ import { Progress } from "antd";
 export const stackArr = [
     {
         id : 1,
-        skill : 'Javascript',
-        img : '',
-        progress :80
+        skill : 'Vanilla',
+        img : 'src/utils/images/js.png',
+        subTxt :'JavaScript',
+        rating : 4
 
     },
     {
         id : 2,
-        skill : 'ReactJS',
+        skill : 'React',
         img : 'src/utils/images/react.png',
-        progress :80
+        subTxt :'JavaScript',
+        rating : 3.5
+
 
 
     },
     {
         id : 3,
         skill : 'Angular',
-        img : '',
-        progress :80
+        img : 'src/utils/images/angular.png',
+        subTxt :'TypeScript',
+        rating : 3.5
+
 
 
     },
     {
         id : 4,
-        skill : 'NodeJS',
-        img : '',
-        progress :60
+        skill : 'ExpressJS',
+        img : 'src/utils/images/express.png',
+        subTxt :'NodeJS',
+        rating : 3
+
 
 
     },
     {
         id : 5,
-        skill : 'ExpressJS',
-        img : '',
-        progress :60
+        skill : 'Static',
+        img : 'src/utils/images/html.png',
+        subTxt :'HTML/CSS',
+        rating : 4
+
 
 
     },
     {
         id : 6,
         skill : 'MySQL',
-        img : '',
-        progress :70
+        img : 'src/utils/images/mysql.png',
+        subTxt :'Database',
+        rating : 3.5
 
 
-    },
-    {
-        id : 7,
-        skill : 'HTML',
-        img : '',
-        progress :90
 
     },
     {
-        id : 8,
-        skill : 'CSS',
-        img : '',
-        progress :80
-
+        id : 6,
+        skill : 'Java',
+        img : 'src/utils/images/java.png',
+        subTxt : 'Core',
+        rating : 3.5
 
     },
+  
 ]

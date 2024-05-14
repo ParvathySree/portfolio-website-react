@@ -1,19 +1,37 @@
-import React, { useState } from 'react'
-
-import { Flex, Progress } from 'antd';
+import React, { useEffect, useState } from 'react'
+import { Rate } from 'antd';
 import './StackCard.css'
 
 
 
 const StackCard = (props) => {
 
-    const {id,skill,img,progress} = props.skills
-    console.log(props)
+    const {rating,skill,img,subTxt} = props.skills
+    const [rate,setRate] = useState('')
+
+    useEffect(() => {
+      setRate(rating)
+    }, [rating])
+    
     return (
         <>
-         <div class="progress-con">
-         <div class="skill-name">{skill}</div>
-         <Progress percent={progress} strokeColor={progress < 50 ? 'red' : '#f6ff63'}/>
+         <div className="progress-con">
+            <div className='progress-con-card'>
+                <div className='skill-con-out'>
+                    <span className='img-skill'><img  src={img}/></span>
+                    <div>
+                        <span className='skill-maintext'>{skill}</span>
+                        <div>
+                        <span className='skill-subtext'>{subTxt}</span>
+                        </div>
+                        <div>
+                        <Rate disabled allowHalf value={rate} />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        
          </div>
         
         </>
