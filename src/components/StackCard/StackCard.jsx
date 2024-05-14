@@ -1,43 +1,45 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState, useEffect } from 'react';
+import { Waypoint } from 'react-waypoint';
 import { Rate } from 'antd';
-import './StackCard.css'
-
-
+import './StackCard.css';
 
 const StackCard = (props) => {
-
-    const {rating,skill,img,subTxt} = props.skills
-    const [rate,setRate] = useState('')
+    const { rating, skill, img, subTxt } = props.skills;
+    const [rate, setRate] = useState('');
+    const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
-      setRate(rating)
-    }, [rating])
-    
+        setRate(rating);
+    }, [rating]);
+
+    const handleEnterViewport = () => {
+        setIsVisible(true);
+    };
+
+    const handleLeaveViewport = () => {
+        setIsVisible(false);
+    };
+
     return (
-        <>
-         <div className="progress-con">
-            <div className='progress-con-card'>
-                <div className='skill-con-out'>
-                    <span className='img-skill'><img  src={img}/></span>
-                    <div>
-                        <span className='skill-maintext'>{skill}</span>
+        <Waypoint onEnter={handleEnterViewport} onLeave={handleLeaveViewport}>
+            <div className={`progress-con ${isVisible ? 'visible' : ''}`} style={{ width: isVisible ? '250px' : '0' }}>
+                <div className='progress-con-card'>
+                    <div className='skill-con-out'>
+                        <span className='img-skill'><img src={img} alt="Skill Icon" /></span>
                         <div>
-                        <span className='skill-subtext'>{subTxt}</span>
-                        </div>
-                        <div>
-                        <Rate disabled allowHalf value={rate} />
+                            <span className='skill-maintext'>{skill}</span>
+                            <div>
+                                <span className='skill-subtext'>{subTxt}</span>
+                            </div>
+                            <div>
+                                <Rate disabled allowHalf value={rate} />
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-        
-         </div>
-        
-        </>
-        
-  
-    )
-}
+        </Waypoint>
+    );
+};
 
-export default StackCard
+export default StackCard;

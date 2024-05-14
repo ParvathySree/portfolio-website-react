@@ -21,9 +21,11 @@ const Stack = () => {
   return (
 
     <div className='stack-con'>
-     
+      <div className='vertical-subcon'>
+        {/* <span>SKILLS</span> */}
+      </div>
       <div className="stack-con-sub">
-        <h1 className='title-1'>Skills Stack</h1>
+        {/* <h1 className='title-1'>Things I'm good at.</h1> */}
         <div className="skill-con">
           {skillArr.map((skill) => {
             return (

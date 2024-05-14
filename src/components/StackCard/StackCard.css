@@ -1,55 +1,53 @@
-.card-con{
+.progress-con {
     display: flex;
-    gap:50px
-}
-
-
-
-.progress-con-card{
+    justify-content: center;
+    align-items: flex-start; /* Align from top */
+    overflow: hidden;
+    transition: height 1s ease; /* Use height transition instead of width */
+    height: 0; /* Initially, set height to 0 */
+  }
+  
+  .progress-con.visible {
+    height: 100px; /* Adjust the final height as needed */
+  }
+  
+  .progress-con-card {
     min-width: 250px;
     max-width: 250px;
-    border: 1px solid rgb(255, 255, 255);
-}
-
-.progress-con-card:hover{
-    border: 2px solid rgb(255, 255, 255);
-    background-color: #8989f9;
-}
-
-.skill-con-out{
+  }
+  
+  .skill-con-out {
     padding: 25px 25px;
     display: flex;
     align-items: center;
     justify-self: center;
     gap: 10px;
-}
-
-.img-skill{
+  }
+  
+  .img-skill {
     height: 50px;
     width: 50px;
     border-radius: 2px;
     border: 2px solid #fff;
-}
-
-.img-skill img{
+  }
+  
+  .img-skill img {
     height: 100%;
     width: 100%;
     border-radius: 1px;
-
-
-}
-
-.skill-subtext{
+  }
+  
+  .skill-subtext {
     font-size: 12px;
     color: #ffffff;
-}
-
-.skill-maintext{
+  }
+  
+  .skill-maintext {
     font-weight: 700;
     color: #ffffff;
-
-}
-
-.ant-rate{
+  }
+  
+  .ant-rate {
     font-size: 15px !important;
-}
+  }
+  

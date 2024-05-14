@@ -15,9 +15,9 @@ const Home = () => {
     <div className='home-con'>
       <div>
         <h1 className='heading-1'>Hi I<span className='name-clr'>'</span>m <span className='name-clr'>Sreeparvathy</span><span className='name-clr'>.</span></h1>
-        <h3 >FRONTEND DEVELOPER</h3>
-        <h2>They say I speak code<span className='name-clr'>.</span> Fluently<span className='name-clr'> !</span> </h2>
-        <h2>Let<span className='name-clr'>'</span>s connect<span className='name-clr'>.</span></h2>
+        <h3 className='role'>FRONTEND DEVELOPER</h3>
+        <h2>They say I speak code<span className='name-clr'>.</span> Fluently<span className='name-clr'> !</span> <br/>
+        Let<span className='name-clr'>'</span>s connect<span className='name-clr'>.</span></h2>
         <div className='icons'>
           <a href={LINKDIN_URL}><IconButton className='icon-btn'>
             <LinkedInIcon className='icon-mat' />
@@ -35,7 +35,7 @@ const Home = () => {
         </div>
       </div>
       <div>
-        <img src='./src/utils/images/developer.svg' alt='developer'></img>
+        {/* <img src='./src/utils/images/developer.svg' alt='developer'></img> */}
       </div>
     </div>
   )

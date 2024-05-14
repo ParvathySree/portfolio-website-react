@@ -1,7 +1,13 @@
 .stack-con{
-    background-color: #6c63ff;
+    background-color: #265EB8;
     display: flex;
 }
+
+/* .vertical-subcon{
+  width: 80px;
+  background-color: #DFDE2F;
+} */
+
 
 
 .title-1{
@@ -22,6 +28,6 @@
     /* align-items: center; */
     flex-wrap: wrap;
     margin: 40px;
-    gap: 40px;
+    gap: 30px;
    
   }
