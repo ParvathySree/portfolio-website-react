@@ -34,8 +34,8 @@ const Home = () => {
           </a>
         </div>
       </div>
-      <div>
-        {/* <img src='./src/utils/images/developer.svg' alt='developer'></img> */}
+      <div className='profile'>
+        {/* <img src='src/utils/images/parvathy1.png' alt='developer'></img> */}
       </div>
     </div>
   )

@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: flex-start; /* Align from top */
     overflow: hidden;
-    transition: height 1s ease; /* Use height transition instead of width */
+    transition: height 3s ease; /* Use height transition instead of width */
     height: 0; /* Initially, set height to 0 */
   }
   
